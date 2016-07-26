@@ -1,0 +1,45 @@
+.titolo{
+	font-family: "Times New Roman", Times, serif;
+	color: yellow;
+	text-shadow: 
+			1px  1px 2px black,
+   			1px -1px 2px black,
+   			-1px  1px 2px black,
+   			-1px -1px 2px black;
+	font-size: 60px;
+}
+  .gioca1{
+
+  	color :red;
+	font-size: 30px;
+	
+}
+.win{
+	
+	color :green;
+	font-size: 30px;	
+}
+.gioca2{
+	padding-bottom: 50px;
+	color:blue;
+	font-size: 30px;
+}
+#gio1{
+	
+	border: 4px solid red;
+
+}
+#gio2{
+	
+	border: 4px solid blue;
+
+}
+#display{
+
+	text-align: center;
+	border: 4px solid green;
+
+}
+#spzf{
+	padding-bottom: 50px;
+}
