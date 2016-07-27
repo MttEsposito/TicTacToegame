@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" conten t= "width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>TicTacToe-game</title>
-
+        <!--title page and css import -->
+        <title> TicTacToe-game </title>
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/stile.css" rel="stylesheet">
-
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/stile.css" rel = "stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -19,53 +18,57 @@
         <![endif]-->
     </head> 
     
+    <!--header and title page-->
     <header>
-        <div class="col-md-12" align="center" >
-            <h1 class="titolo">Tic Tac Toe </h1>	
+        <div class = "col-md-12" align = "center" >
+            <h1 class = "title"> Tic Tac Toe </h1>	
         </div>
     </header>
-   
-    <body onload="start()">
-    <audio id="audio" src="audio/suono.ogg"></audio>
-        <div align="center" class="col-md-12 gioca1">
-            <p>Giocatore 1</p>
-            <form name="f1">
-                <input type="text" id="gio1" name="player1" value="Giocatore 1"  class="gg1">
+    
+   <!--input & player name -->
+    <body onload = "start()">
+    <audio id = "audio" src = "audio/suono.ogg"></audio>
+        <div align = "center" class = "col-md-12 playerone">
+            <p> Player1 </p>
+            <form name = "f1">
+            <input type = "text" id = "Pl1" name = "player1" value = "Giocatore 1"  class = "gg1">
+        </div>
+        <div align = "center" class = "col-md-12 playertwo">
+            <p> Player2 </p>
+            <input type = "text" id = "Pl2" name = "player2" value = "Giocatore 2" class = "gg2">
+        </div>
+        
+                <!-- grid of the game  -->
+                <div id = "grid">
+                    <div align = "center" class = "col-md-12">
+                        <img src = "img/0.png" onClick = "playIn(0);play()">
+                        <img src = "img/0.png" onClick = "playIn(1);play()">
+                        <img src = "img/0.png" onClick = "playIn(2);play()">
+                    </div>
+                    <div align = "center" class = "col-md-12">
+                        <img src = "img/0.png" onClick = "playIn(3);play()">
+                        <img src = "img/0.png" onClick = "playIn(4);play()">
+                        <img src = "img/0.png" onClick = "playIn(5);play()">
+                    </div>
+                    <div align = "center" class = "col-md-12" id = "spzf">
+                        <img src = "img/0.png" onClick = "playIn(6);play()">
+                        <img src = "img/0.png" onClick = "playIn(7);play()">
+                        <img src = "img/0.png" onClick = "playIn(8);play()">
+                    </div>
                 </div>
-                <div align="center" class="col-md-12 gioca2">
-                    <p> Giocatore 2</p>
-                    <input type="text" id="gio2" name="player2" value="Giocatore 2" class="gg2">
-
-                </div>
-                <div id="griglia">
-                    <div align="center" class="col-md-12">
-                        <img src="img/0.png" onClick="giocaIn(0);play()">
-                        <img src="img/0.png" onClick="giocaIn(1);play()">
-                        <img src="img/0.png" onClick="giocaIn(2);play()">
-                    </div>
-                    <div align="center" class="col-md-12">
-                        <img src="img/0.png" onClick="giocaIn(3);play()">
-                        <img src="img/0.png" onClick="giocaIn(4);play()">
-                        <img src="img/0.png" onClick="giocaIn(5);play()">
-                    </div>
-                    <div align="center" class="col-md-12" id="spzf">
-                        <img src="img/0.png" onClick="giocaIn(6);play()">
-                        <img src="img/0.png" onClick="giocaIn(7);play()">
-                        <img src="img/0.png" onClick="giocaIn(8);play()">
-                    </div>
-               
-                </div>
-               
-                <div align="center" class="col-md-12 win" id="ris">
-                    <input type="text" id="display" name="campo" readonly>
-                    </div>
-                    </form>
                 
+        <!-- Display with the name player turn and winner-->
+        <div align = "center" class = "col-md-12 win" id = "ris">
+            <input type = "text" id = "display" name = "campo" readonly>
+        </div>
+            </form>
     </body>
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/fdg.js"></script>
+    
+    <!-- include all file for the page to play -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "js/bootstrap.min.js"></script>
+    <script src = "js/fdg.js"></script>
 
 </html>
