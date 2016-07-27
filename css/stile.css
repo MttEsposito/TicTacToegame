@@ -20,9 +20,12 @@
 	font-size: 30px;	
 }
 .playertwo{
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	color: blue;
 	font-size: 30px;
+}
+.buttonnewgame{
+	margin-bottom: 25px;
 }
 #Pl1{
 	

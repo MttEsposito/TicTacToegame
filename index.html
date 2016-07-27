@@ -6,6 +6,7 @@
         <meta name = "viewport" conten t= "width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <!--title page and css import -->
+        <link rel="icon" type="image/gif/png" href="img/favicon.ico">
         <title> TicTacToe-game </title>
         <!-- Bootstrap -->
         <link href = "css/bootstrap.min.css" rel = "stylesheet">
@@ -20,6 +21,10 @@
     
     <!--header and title page-->
     <header>
+        <div class = "col-md-12" align = "left">
+            <img src = "img/audioenable50x50.png" id = "enableaudio" onClick = "muted(true)">
+            <img src = "img/audiodisable50x50.png" id = "disableaudio" onClick = "muted(false)"hidden>
+        </div>
         <div class = "col-md-12" align = "center" >
             <h1 class = "title"> Tic Tac Toe </h1>	
         </div>
@@ -40,6 +45,9 @@
         
                 <!-- grid of the game  -->
                 <div id = "grid">
+                    <div align = "center " class = "col-md-12">
+                        <button align = "center" type="button" id = "bnewgame" class="btn btn-info btn-lg buttonnewgame ">NEW GAME</button>
+                    </div>
                     <div align = "center" class = "col-md-12">
                         <img src = "img/0.png" onClick = "playIn(0);play()">
                         <img src = "img/0.png" onClick = "playIn(1);play()">

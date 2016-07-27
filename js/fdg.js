@@ -12,7 +12,7 @@ function playIn (n) {
   
 	var display = document.getElementById("display");
 	if ((d[n] == 0) && (f == 0)) {
-    document.images[n].src = image[x]
+    document.images[n + 2].src = image[x]
     if (x == 1) {
     	display.setAttribute("class","gg1");
       document.f1.campo.value = "Turno di " + name(2)
@@ -46,6 +46,7 @@ function controllo() {
       f = 1
   	display.setAttribute("class","win");
      document.f1.campo.value = "Vincitore : " + name(x)
+     showButton();
   }
   if (f == 0) {
     var p = 0
@@ -56,6 +57,23 @@ function controllo() {
 }
   }
 }
+
 function start(){
 	document.getElementById("display").value = "";
+}
+
+function muted(param){
+  var audiomuted = document.getElementById("audio");
+  audiomuted.muted = param;
+  var enbutton = document.getElementById("enableaudio");
+  var dibutton = document.getElementById("disableaudio");
+  if (!param){
+    dibutton.setAttribute("hidden", true);
+    enbutton.removeAttribute("hidden")
+  }else
+  {
+      enbutton.setAttribute("hidden", true);
+      dibutton.removeAttribute("hidden")
+      
+  }
 }
