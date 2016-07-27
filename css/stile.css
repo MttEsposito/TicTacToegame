@@ -1,3 +1,4 @@
+/*title css font and color*/
 .title{
 	font-family: "Times New Roman", Times, serif;
 	color: yellow;
@@ -8,41 +9,49 @@
    			-1px -1px 2px black;
 	font-size: 60px;
 }
-  .playerone{
 
+/*color for the name of the player one*/
+  .playerone{
   	color :red;
 	font-size: 30px;
-	
 }
+
+/*color in the label of the turn player and winner*/
 .win{
 	
 	color: green;
 	font-size: 30px;	
 }
+
+/*color the player two name */
 .playertwo{
 	padding-bottom: 20px;
 	color: blue;
 	font-size: 30px;
 }
+
+/*margin for align the newgame button*/
 .buttonnewgame{
 	margin-bottom: 25px;
 }
+
+/*color the box of the input name playerone*/
 #Pl1{
-	
 	border: 4px solid red;
-
 }
+
+/*color the box input of playertwo name*/
 #Pl2{
-	
 	border: 4px solid blue;
-
 }
-#display{
 
+/*color the display and text align*/
+#display{
 	text-align: center;
 	border: 4px solid green;
-
 }
-#spzf{
+
+/*space grid from the last box of the turn player */
+#endspace{
 	padding-bottom: 50px;
 }
