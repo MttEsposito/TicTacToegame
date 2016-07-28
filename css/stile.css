@@ -1,12 +1,12 @@
 /*title css font and color*/
 .title{
-	font-family: "Times New Roman", Times, serif;
-	color: yellow;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #33FF00;
 	text-shadow: 
-			1px  1px 2px black,
-   			1px -1px 2px black,
-   			-1px  1px 2px black,
-   			-1px -1px 2px black;
+			1px  1px 2px #003300,
+   			1px -1px 2px #003300,
+   			-1px  1px 2px #003300,
+   			-1px -1px 2px #003300;
 	font-size: 60px;
 }
 
@@ -33,6 +33,23 @@
 /*margin for align the newgame button*/
 .buttonnewgame{
 	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+/*color the box and name point player1 and text align*/
+.pointpl1{
+	text-align: center;
+	border: 3px solid red;
+	color: red;
+	font-size: 20px;
+}
+
+/*color the box and name point player2 and text align*/
+.pointpl2{
+	text-align: center;
+	border: 3px solid blue;
+	color: blue;
+	font-size: 20px;
 }
 
 /*color the box of the input name playerone*/
@@ -54,4 +71,14 @@
 /*space grid from the last box of the turn player */
 #endspace{
 	padding-bottom: 50px;
+}
+
+#content-section{
+    background-color: white;
+    box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+/*put a background-image on the site*/
+body {
+   background-image: url("http://i1155.photobucket.com/albums/p560/sean1rose/backgroundimage_zpsa6c55a2e.png");
 }
