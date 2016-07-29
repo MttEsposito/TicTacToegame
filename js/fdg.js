@@ -98,5 +98,10 @@ function muted(param){
 
 //function for the reset and play again
 function resetboard(){
-
+this.d = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]; 
+  for (i = 2 ; i<=10; i++) document.images[i].src = image[0]; 
+  document.getElementById("display").value = "";
+  document.getElementById("display").removeAttribute("class");
+  x = 1;
+  f = 0;
 }
