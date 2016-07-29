@@ -5,6 +5,7 @@ var x = 1;
 var f = 0;
 var pl1v = 0;
 var pl2v = 0;
+console.log("made by IlMicioMiao & rafael92");
 
 //Changed the name in the label as the turn of the player
 function name (a) {
